@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.fredporciuncula:flow-preferences:1.9.1'
+  implementation "com.fredporciuncula:flow-preferences:1.9.1"
 }
 ```
 

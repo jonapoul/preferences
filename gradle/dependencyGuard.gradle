@@ -1,0 +1,8 @@
+apply plugin: libs.plugins.dependencyGuard.get().pluginId
+
+dependencyGuard {
+  configuration("debugRuntimeClasspath")
+  configuration("debugUnitTestRuntimeClasspath")
+  configuration("releaseRuntimeClasspath")
+  configuration("releaseUnitTestRuntimeClasspath")
+}
