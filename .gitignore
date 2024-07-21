@@ -24,6 +24,7 @@
 .gradle
 build
 /local.properties
+kotlin-js-store/
 
 # macOS
 .DS_Store
