@@ -93,8 +93,8 @@ commons-codec:commons-codec:1.16.0
 commons-io:commons-io:2.4
 commons-logging:commons-logging:1.2
 dev.equo.ide:solstice:1.7.3
-dev.jonpoulton.blueprint:core:0.4.3
-dev.jonpoulton.blueprint:recipes:0.4.3
+dev.jonpoulton.blueprint:core:0.5.0
+dev.jonpoulton.blueprint:recipes:0.5.0
 dev.jonpoulton.gradle-maven-publish-plugin:central-portal:0.29.0-tak
 dev.jonpoulton.gradle-maven-publish-plugin:nexus:0.29.0-tak
 dev.jonpoulton.gradle-maven-publish-plugin:plugin:0.29.0-tak

@@ -1,7 +1,8 @@
 @file:Suppress("UnusedPrivateProperty")
 
-import blueprint.core.intProperty
+import blueprint.core.javaVersionInt
 import blueprint.recipes.DEFAULT_KOTLIN_FREE_COMPILER_ARGS
+import blueprint.recipes.kotlinBaseBlueprint
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -12,9 +13,11 @@ plugins {
   id("com.dropbox.dependency-guard")
 }
 
+kotlinBaseBlueprint()
+
 kotlin {
   jvm {
-    jvmToolchain(intProperty(key = "javaVersion"))
+    jvmToolchain(javaVersionInt())
   }
 
   js(IR) {
@@ -41,6 +44,8 @@ tasks.withType<KotlinCompile> {
 dependencyGuard {
   configuration("jsCompileClasspath")
   configuration("jsRuntimeClasspath")
+  configuration("jsTestRuntimeClasspath")
   configuration("jvmCompileClasspath")
-  configuration("jvmCompileClasspath")
+  configuration("jvmRuntimeClasspath")
+  configuration("jvmTestRuntimeClasspath")
 }

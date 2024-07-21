@@ -1,19 +1,24 @@
-import blueprint.core.stringProperty
+import blueprint.core.javaVersionString
+import blueprint.recipes.androidLibBlueprint
+import blueprint.recipes.kotlinJvmBlueprint
 
 plugins {
   kotlin("android")
-  id("convention-android")
+  id("com.android.library")
   id("convention-publish")
   id("convention-style")
   id("convention-test")
   id("com.dropbox.dependency-guard")
 }
 
+kotlinJvmBlueprint(libs.versions.kotlin)
+androidLibBlueprint()
+
 android {
   namespace = "dev.jonpoulton.preferences.android"
 
   kotlinOptions {
-    jvmTarget = stringProperty(key = "javaVersion")
+    jvmTarget = javaVersionString()
   }
 }
 
