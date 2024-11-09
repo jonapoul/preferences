@@ -93,8 +93,8 @@ commons-codec:commons-codec:1.16.0
 commons-io:commons-io:2.4
 commons-logging:commons-logging:1.2
 dev.equo.ide:solstice:1.7.3
-dev.jonpoulton.blueprint:core:0.5.0
-dev.jonpoulton.blueprint:recipes:0.5.0
+dev.jonpoulton.blueprint:core:0.10.0
+dev.jonpoulton.blueprint:recipes:0.10.0
 dev.jonpoulton.gradle-maven-publish-plugin:central-portal:0.29.0-tak
 dev.jonpoulton.gradle-maven-publish-plugin:nexus:0.29.0-tak
 dev.jonpoulton.gradle-maven-publish-plugin:plugin:0.29.0-tak
@@ -183,7 +183,7 @@ org.jetbrains.kotlinx:kover-gradle-plugin:0.7.6
 org.jetbrains:annotations:13.0
 org.jetbrains:markdown-jvm:0.3.1
 org.jetbrains:markdown:0.3.1
-org.jlleitschuh.gradle:ktlint-gradle:12.1.0
+org.jlleitschuh.gradle:ktlint-gradle:12.1.1
 org.json:json:20180813
 org.jsoup:jsoup:1.15.3
 org.jvnet.staxex:stax-ex:1.8.1
