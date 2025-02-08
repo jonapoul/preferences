@@ -26,9 +26,9 @@ interface Preferences {
     default: T?,
   ): Preference<T?>
 
-  sealed interface Serializer<R : Any, T : Any> {
-    fun deserialize(value: R): T
-    fun serialize(value: T): R
+  sealed interface Serializer<Serialized : Any, Deserialized : Any> {
+    fun deserialize(value: Serialized): Deserialized
+    fun serialize(value: Deserialized): Serialized
   }
 
   sealed interface NullableSerializer<R : Any, T : Any> {
